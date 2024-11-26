@@ -1,0 +1,116 @@
+:root { /*DECLARANDO VARIAVEIS*/
+    --vermelho: #E50914;
+    --preta: #141414;
+    --cinza: #AAA;
+    --branca: #ffffff;
+}
+
+* { /*reset CSS*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: var(--branca);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    transition: 0.4s ease all;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover {
+    color: var(--branca);
+}
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/it.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.segundo-titulo {
+    text-align: center;
+    color: var(--vermelho);
+    margin: 15px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--branca);
+    padding: 15px;
+    margin: 0px 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: var(--branca);
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 6px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 65%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
